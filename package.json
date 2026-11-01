@@ -1,0 +1,28 @@
+{
+  "name": "word-bridge-maimemo",
+  "version": "0.1.4",
+  "description": "Obsidian 轻量查词插件：选区小图标、词典查词、大模型翻译、生词收藏与墨墨云词本同步",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc --noEmit && node esbuild.config.mjs production",
+    "build:dev": "node esbuild.config.mjs",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "package": "npm run build && node scripts/package.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "esbuild": "^0.25.0",
+    "happy-dom": "^18.0.0",
+    "obsidian": "^1.14.4",
+    "tslib": "^2.8.0",
+    "typescript": "^5.9.0",
+    "vitest": "^3.2.0"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=24"
+  }
+}
